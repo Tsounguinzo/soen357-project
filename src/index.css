@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Volkhov", "Roboto", sans-serif;
+  background-image: url("../public/backgroundRight.png"),
+    url("../public/backgroundLeft.png");
+  background-position: top right, left 40%;
+  background-repeat: no-repeat, no-repeat;
+  overflow-x: hidden;
+}
+
+.react-daterange-picker__wrapper {
+  border: 1px solid #ebebeb !important;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.react-daterange-picker__inputGroup__input {
+  font-family: "Roboto" !important;
+}
+
+.react-daterange-picker__inputGroup__input:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.react-daterange-picker__inputGroup {
+  text-align: center !important;
+  border-right: 1px solid #ebebeb !important;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: #000 !important;
+}
+
+.react-calendar {
+  border: none !important;
+  background-color: #fff !important;
+  box-shadow: 0px 9px 36px 0px #00000017 !important;
+  font-family: "Roboto" !important;
+  border-radius: 12px !important;
+}
+
+.react-calendar abbr {
+  font-family: "Roboto" !important;
+  text-decoration: none !important;
+}
+
+.react-calendar__tile:hover {
+  background-color: #ffecec !important;
+  color: #000 !important;
+}
+
+.react-calendar__navigation__label__labelText {
+  font-family: "Roboto" !important;
+  font-weight: bold !important;
+}
+
+.react-calendar__tile--active {
+  color: #000 !important;
+  background-color: #ffecec !important;
+}
+
+.react-calendar__navigation__arrow {
+  font-size: larger !important;
+  color: #fa5252 !important;
+}
+
+.react-calendar__tile--now {
+  background-color: #fff !important;
+}
+
+.react-calendar__tile--now.react-calendar__tile--active {
+  background-color: #fa5252 !important;
+}
+
+.react-calendar__tile.react-calendar__tile--now.react-calendar__tile--hasActive.react-calendar__month-view__days__day {
+  background-color: #fa5252 !important;
+  color: #fff !important;
+}
+
+.react-calendar__tile--rangeStart {
+  color: #fff !important;
+  background-color: #fa5252 !important;
+}
+
+.react-calendar__tile--rangeEnd {
+  color: #fff !important;
+  background-color: #fa5252 !important;
+}
+
+.react-calendar__navigation__prev2-button,
+.react-calendar__navigation__next2-button {
+  background-color: #fff !important;
+  display: none !important;
+}
+
+span.react-daterange-picker__inputGroup__leadingZero {
+  color: #000 !important;
+  font-family: "Roboto" !important;
+}
+
+.react-calendar button:disabled {
+  background-color: #f2f3f7 !important;
+  color: #afafaf !important;
+  /* border: 1px solid #E3E3EB; */
+  cursor: not-allowed;
+}
+
+.react-calendar__navigation__arrow.react-calendar__navigation__prev-button:disabled {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* .svg-calLoader {
+  width: 200px;
+  height: 200px;
+  transform-origin: 115px 115px;
+  animation: 1.4s linear infinite loader-spin;
+}
+
+.cal-loader__plane {
+  fill: #FFA500;
+}
+
+.cal-loader__path {
+  stroke: #FFFFFF;
+  animation: 1.4s ease-in-out infinite loader-path;
+}
+
+@keyframes loader-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-path {
+  0% {
+    stroke-dasharray: 0, 580, 0, 0, 0, 0, 0, 0, 0;
+  }
+  50% {
+    stroke-dasharray: 0, 450, 10, 30, 10, 30, 10, 30, 10;
+  }
+  100% {
+    stroke-dasharray: 0, 580, 0, 0, 0, 0, 0, 0, 0;
+  }
+} */
+
+/* Media query for mobile devices */
+@media screen and (max-width: 600px) {
+  body {
+    background-size: 160px 160px, 160px 160px;
+    /* Set background size to auto for mobile devices */
+    background-position: top right, left 25%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .react-daterange-picker__wrapper {
+    border: 1px solid #ebebeb !important;
+    border-top-left-radius: 12px !important;
+    border-bottom-left-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+    border-bottom-right-radius: 12px !important;
+  }
+}
+
+.imglogo-banner-airlines {
+  width: 130px;
+  height: 50px;
+  padding: 0 40px;
+  /* filter: grayscale(100%) brightness(50%) contrast(200%); */
+  mix-blend-mode: luminosity;
+  user-select: none;
+  object-fit: contain;
+}
+
+.banner-wrapper-airlines {
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+}
+
+.banner-wrapper-airlines .wrapper-airlines {
+  display: flex;
+}
+
+.banner-wrapper-airlines .wrapper-airlines .images-airlines {
+  display: flex;
+}
+
+.banner-wrapper-airlines:hover .wrapper-airlines .images-airlines {
+  animation-play-state: paused;
+}
+
+tspan {
+  font-family: "Roboto";
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@keyframes swipe {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.chart-container {
+  position: relative;
+}
+
+.chart-blur {
+  filter: blur(4px);
+}
+
+.skeleton-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
